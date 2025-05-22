@@ -1,0 +1,28 @@
+.Footer {
+  background: var(--background-main);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 4rem;
+}
+
+.footerItem{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+.title{
+  margin-bottom: 1rem;
+}
+
+@media(max-width: 567px){
+  .Footer {
+    padding: 2rem;
+    justify-content: start;
+    gap:3rem;
+  }
+  .footerItem{
+    gap:.5rem;
+  }
+}

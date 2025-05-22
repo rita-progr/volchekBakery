@@ -1,0 +1,30 @@
+.Burger {
+  display: flex;
+  flex-direction: column;
+  gap:.3rem;
+
+  .line{
+    width:25px;
+    height:3px;
+    border-radius: 10px;
+    background-color:#000;
+    transition: all .3s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  &.toggle {
+    .line {
+      &:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,16 @@
+@use './variables/global';
+@use 'reset';
+
+body{
+
+  color: var(--text-color);
+  font-family: "Inter", serif;
+
+}
+input{
+  font-family: "Inter", serif;
+}
+
+input::placeholder{
+  font-family: "Inter", serif;
+}

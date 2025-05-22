@@ -1,0 +1,36 @@
+.Navbar {
+  position: fixed;
+  top:0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:.5rem 3rem;
+  z-index:10;
+  background: #fff;
+  //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+  max-width: 110px;
+}
+
+@media(max-width: 768px){
+  .logo{
+    max-width: 90px;
+  }
+  .Navbar {
+    padding:.2rem 1.5rem;
+  }
+}
+
+.flex{
+  display:flex;
+  gap:1rem;
+  align-items: center;
+}
+
+.card{
+  fill: #000;
+  width: 2.5rem;
+}
