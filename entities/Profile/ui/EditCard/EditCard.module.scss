@@ -1,0 +1,15 @@
+.EditCard {
+  background: var(--background-main);
+  border-radius: 16px;
+  padding:2rem;
+  display: flex;
+
+  flex-direction: column;
+  gap:2rem;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  gap:2rem;
+}

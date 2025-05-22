@@ -1,0 +1,58 @@
+.btn {
+    padding:1rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.relative{
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  margin-bottom:1rem;
+  justify-content: end;
+}
+
+.modal{
+  position: absolute;
+  top:2.6rem;
+  right:3.2rem;
+  z-index: 10;
+  width:300px;
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+  display: flex;
+  flex-direction: column;
+  gap:.7rem;
+
+  padding:1rem;
+  //background: white;
+  border: 1px solid #575757;
+  border-radius: 10px;
+}
+
+.text:first-child, .text:nth-child(2){
+  border-bottom: 1px solid #ccc;
+  padding-bottom:.5rem;
+}
+
+
+.text{
+
+}
+
+.active{
+  p{
+    color: #3CB400;
+  }
+}
+
+@media(max-width:576px){
+  .modal{
+    width: 200px;
+  }
+
+}

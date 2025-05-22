@@ -1,0 +1,30 @@
+.AuthorizationFormCode {
+  margin-top: 5rem;
+  background: var(--background-main);
+  border: 1px solid #000;
+  max-width: 450px;
+  padding: 2rem;
+  width: 100%;
+  border-radius: var(--form-radius);
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+
+
+}
+
+.code{
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+
+.btnCont{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  width: 300px;
+}
