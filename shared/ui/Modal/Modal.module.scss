@@ -1,0 +1,105 @@
+
+.Modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  opacity: 0;
+  visibility: hidden;
+
+  &.opened {
+    animation: fadeInModal 0.3s ease-in-out forwards;
+  }
+
+  &.closed {
+    animation: fadeOutModal 0.3s ease-in-out forwards;
+  }
+}
+
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOutModal {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.overlay {
+  padding-top: 10%;
+  backdrop-filter: blur(30px);
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #00000033;
+  -webkit-backdrop-filter: blur(30px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  .Modal.opened & {
+    animation: fadeInOverlay 0.2s ease-in-out forwards;
+  }
+
+  .Modal.closed & {
+    animation: fadeOutOverlay 0.2s ease-in-out forwards;
+  }
+}
+
+
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOutOverlay {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.modalContent {
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+.navbar {
+  position: absolute;
+  z-index: 1000;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 1rem;
+  font-weight: 600;
+}

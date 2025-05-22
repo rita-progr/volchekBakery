@@ -1,0 +1,31 @@
+.icon{
+  background: var(--cart-background-primary);
+  padding:1rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  cursor: pointer;
+}
+
+.iconSvg{
+  fill: #fff;
+  width:2rem;
+  height:2rem;
+}
+
+.icon:hover{
+  opacity: var(--cart-bckground-opacity)
+}
+
+@media(max-width: 576px){
+  .icon{
+    padding:.7rem;
+    top: -1rem;
+    right: -1rem;
+  }
+  .iconSvg{
+    width:1.6rem;
+    height:1.6rem;
+  }
+}

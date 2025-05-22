@@ -1,0 +1,45 @@
+button {
+  margin:0;
+  padding:0;
+  background: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+  scale: 1.1;
+}
+
+.primary{
+  background: var(--text-primary);
+  p{
+    color: #fff;
+  }
+}
+
+.default{
+  border-radius: 10px;
+  padding: .5rem 0;
+}
+
+.small{
+  border-radius: var(--btn-radius);
+  padding: .8rem 2.2rem;
+}
+
+.secondary{
+  border:3px solid var(--text-secondary);
+  padding: .6rem 2.2rem;
+  border-radius: var(--btn-radius);
+}
+
+.clear{
+
+}
+
+@media(max-width: 576px){
+  .small{
+    //border-radius: 10px;
+    padding: .5rem .7rem;
+  }
+}

@@ -1,0 +1,33 @@
+.Input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+input{
+  padding: .5rem !important;
+  border: 1px solid #000 !important;
+  border-radius: var(--input-radius) !important;
+  background: #fff !important;
+  width: 100%;
+}
+
+
+input::placeholder {
+  color: var(--placeholder-color);
+  font-size: var(--font-size-s);
+}
+
+.label{
+  font-size: var(--font-size-s);
+}
+
+input::file-selector-button {
+  display: none;
+}
+
+.error{
+  p{
+    color: red ;
+  }
+}

@@ -1,0 +1,85 @@
+.MyText {
+  color: var(--text-color)
+}
+.primary{
+  color: var(--text-color)
+}
+.secondary{
+  color: var(--text-secondary)
+}
+.inverted_primary{
+  color: var(--text-inverted-primary)
+}
+.outlined{
+  text-decoration: underline;
+}
+.error{
+  color:#DE0000;
+}
+
+.xs{
+  font: var(--font-xs)
+}
+
+.s{
+  font: var(--font-s)
+}
+
+.m{
+  font: var(--font-m)
+}
+
+.u{
+  font: var(--font-u)
+}
+
+.xl{
+  font: var(--font-xl)
+}
+
+.l{
+  font: var(--font-l);
+  p{
+    font-weight: 500;
+  }
+
+}
+
+.xm{
+  font: var(--font-xm)
+}
+
+
+.left{
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center{
+  text-align: center;
+}
+@media(min-width: 768px){
+  .s{
+    font-size: var(--font-size-s-desc);
+  }
+
+  .l{
+    font: var(--font-l-desc);
+  }
+
+}
+
+@media(max-width: 576px){
+  .m{
+    font-size: var(--font-size-m-sm) ;
+  }
+
+  .xm{
+    font: var(--font-u)
+  }
+
+  .xl{
+    font: var(--font-u)
+  }
+}
