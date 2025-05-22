@@ -1,0 +1,11 @@
+.AdminOrders {
+  //height: 100vh;
+  background: var(--background-secondary);
+  padding:10rem 3rem;
+}
+
+@media(max-width: 576px){
+  .AdminOrders{
+    padding: 5rem 2rem;
+  }
+}

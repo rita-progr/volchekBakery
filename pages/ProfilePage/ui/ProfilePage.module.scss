@@ -1,0 +1,77 @@
+.ProfilePage {
+  display: flex;
+  justify-content: space-between;
+  gap:4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.Profile{
+  min-height: 100vh;
+  background: var(--background-main);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:2rem;
+  justify-content: center;
+}
+
+.content{
+
+}
+
+.history{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:4rem;
+}
+
+.cart{
+  fill: black;
+  width: 50px;
+  height: 50px;
+}
+
+.text{
+  background: #fff;
+  padding:1rem;
+  border:1px solid #c7c7c7;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.text:hover{
+  transform: scale(1.1);
+}
+
+@media(max-width: 576px){
+  .Profile, .ProfilePage {
+    padding: 2rem;
+    flex-direction: column;
+    gap:2rem;
+
+    p{
+      font-size: var(--font-size-u)
+    }
+
+    .card{
+      gap:2rem;
+    }
+
+  }
+
+  .Profile{
+    padding-top:7rem;
+  }
+
+}

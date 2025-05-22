@@ -1,0 +1,24 @@
+.GoodsDetailsPage {
+  background-color: var(--background-main);
+  padding: 3rem;
+  padding-top:10rem;
+  min-height: 100vh;
+}
+
+.back{
+  fill: #000;
+  height:30px;
+}
+
+.flex{
+  display: flex;
+  gap:1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+@media(max-width: 576px){
+  .GoodsDetailsPage{
+    padding: 5rem 2rem;
+  }
+}

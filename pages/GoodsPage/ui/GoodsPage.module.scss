@@ -1,0 +1,32 @@
+.GoodsPage {
+  padding: 10rem 3rem;
+  background: #5e3000;
+}
+
+.text{
+  margin-bottom:4rem;
+}
+
+.back{
+  fill: #fff;
+}
+.flex{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+@media(max-width: 576px){
+  .back{
+    height:30px;
+  }
+
+  .text{
+    margin-bottom: 2rem;
+  }
+
+  .GoodsPage {
+    padding: 5rem 2rem;
+  }
+}

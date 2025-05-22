@@ -1,0 +1,23 @@
+.OrderGoods {
+  min-height: 100vh;
+  padding:10rem 3rem;
+  background: var(--background-main);
+}
+
+.header{
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+
+.back{
+  fill: #000;
+}
+
+@media(max-width: 576px){
+  .OrderGoods {
+    padding: 6rem 2rem;
+
+  }
+}

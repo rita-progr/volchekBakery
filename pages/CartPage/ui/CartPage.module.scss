@@ -1,0 +1,30 @@
+.CartPage {
+  background-color: var(--background-main);
+  padding: 3rem;
+  padding-top:10rem;
+
+  //height: 100vh;
+}
+
+.title{
+  margin-bottom: 3rem;
+}
+
+.btn{
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.select{
+  margin: 1rem 0;
+}
+
+.text{
+  margin-bottom: 1rem;
+}
+
+@media(max-width: 576px){
+  .CartPage{
+    padding: 5rem 2rem;
+  }
+}
