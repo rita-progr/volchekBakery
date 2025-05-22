@@ -1,0 +1,98 @@
+.MainPageInfo {
+  padding: 3rem 2rem;
+  min-height: calc(100vh - var(--navbar-height));
+  background: url('../../../../shared/assets/images/various-types-bread-grain.jpg');
+  background-size: cover;
+}
+
+.texts{
+  display:flex;
+  gap:1.5rem;
+  flex-direction: column;
+  align-items: center;
+  p{
+    color:white;
+  }
+}
+
+.text{
+  max-width: 80%;
+  width: 100%;
+  p{
+    font-weight:300;
+  }
+}
+
+.btn{
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -1rem;
+}
+
+.btns{
+  margin-top: 2.5rem;
+  display: flex;
+  width:100%;
+  gap: -1.5rem;
+  justify-content: center;
+}
+
+.textFooter{
+  margin-top: 8rem;
+  display:flex;
+  width: 100%;
+  bottom:4rem;
+  justify-content: center;
+  align-items: center;
+  p{
+    color:white;
+  }
+}
+
+.btnOne{
+  transform: translate3d(0,0,0);
+  animation: transOne 1.5s ease-in-out;
+}
+
+.btnTwo{
+  transform: translate3d(0,0,0);
+  animation: transTwo 1.5s ease-in-out;
+}
+
+@keyframes transOne {
+  from {
+    transform: translate3d(-1000px,0,0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes transTwo {
+  from {
+    transform: translate3d(1000px,0,0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@media(max-width: 576px) {
+  .btns {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .btnOne{
+    padding: .7rem;
+  }
+
+}
